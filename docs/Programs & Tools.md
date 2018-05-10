@@ -1,14 +1,14 @@
 # 程序与工具
 - [程序](#程序)
-    - [Nodeos](#Nodeos)
-    - [Cleos](#Cleos)
+    - [nodeos](#nodeos)
+    - [cleos](#cleos)
     - [keosd](#keosd)
 - [工具](#工具)
 ## 程序
 
-### Nodeos
+### nodeos
 这部分是运行一个由多个插件配置的节点的EOSIO核心守护进程，实例的用途主要是生产区块、专用API端、和本地部署。
-#### Cleos
+### cleos
 cleos是一个命令行工具，它与nodeos公开的REST API进行交互。 为了使用cleos，您需要将终端（IP地址和端口号）添加到nodeos实例，并配置cleos以加载'eosio :: chain_api_plugin'。 cleos文件夹中包含所有命令的文档。 有关cleos已知的所有命令，只需简单地运行它，不需要任何参数：
 
 ><pre><code>cleos
@@ -55,5 +55,5 @@ cleos是一个命令行工具，它与nodeos公开的REST API进行交互。 为
 >  -s,--skip-signature         设置不应使用解锁的钱包密钥来签署交易
 >  -x,--expiration             设置交易最长等待确认时间，以秒为量级, 缺省值为 30s
 >  -f,--force-unique           强制交易特殊，这将消耗额外带宽，并移除为防止多次意外发布相同交易的任何保护措施</code></pre>
-##### keosd
+### keosd
 这是载入由插件配置的钱包的EOSIO钱包守护进程，如HTTP端或RPC API。
